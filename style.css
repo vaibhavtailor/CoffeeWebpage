@@ -1,0 +1,189 @@
+body{margin: 0px !important;}
+
+
+/*** first we will apply display flex to the header element since we want the logo and the nav to be the flex items ***/
+header{
+  display: flex;
+  height: 100px;
+  /** in order to align the content in the along the center of the flex box we will add the align items property **/
+  align-items: center;
+}
+/** target the article **/
+header > article{
+  height: 100%;
+  /** by applying the flex-grow argument we can dictate which element gets the most space. **/
+  flex-grow: 1;
+}
+header > article > a > img{
+  height: 100px;
+  width: 95px;
+  padding: 0px 20px 0px 25px;
+}
+header > nav > ul{
+  list-style: none;
+  display: flex;
+}
+header > nav > ul > li{
+  padding: 0px 10px 0px 10px;
+}
+/** Modifying the chnges on button press **/
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+/** Adding background image and aligning items in first child*/
+main > section:first-child{
+  height: 100vh;
+  background-image: url('../img/background-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0% 2% 0% 0%;
+  display: flex;
+  align-items: center;
+}
+main > section:first-child{
+  display: flex;
+  padding: 2%;
+  align-items: center;
+  flex-direction: row-reverse;
+  min-height: 500px;
+}
+/** Targeting article*/
+main > section:first-child > article{
+  padding: 100px;
+  align-content: center;
+  margin-right: 150px;
+}
+main > section:first-child > article > h1{
+  font-size: 25px;
+  text-align: right;
+}
+main > section:first-child > article > img{
+  width: 320px;
+  height: 360px;
+  align-items: center;
+}
+/** Targeting buttons*/
+main > section:first-child > article:first-child > ul > button {
+  border: 1px solid black;
+  padding: -1;
+  float: left;
+  background-color: #ffffff;
+  font-size: 15px;
+}
+main > section:first-child > article:first-child > ul > button > a {
+  color: #000000;
+}
+main > section:first-child > article:first-child > ul > button:first-child {
+  border: 1px solid black;
+  padding: -1%;
+  float: left;
+  background-color: #00fffa;
+  font-size: 15px;
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 55px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: black;
+  padding: 5px 22px;
+  text-decoration: none;
+  display: block;
+}
+.show {display:block;}
+main > section:nth-child(2){
+  display: flex;
+  padding: 2%;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+main > section:nth-child(2) > article{
+  padding: 2%;
+}
+main > section:nth-child(2) > article > h3{
+  font-size: 24px;
+}
+main > section:nth-child(2) > article:nth-child(2) > img{
+  width: 300px;
+  height: 400px;
+}
+main > section:nth-child(3) > article > h2 {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #ffffff;
+}
+main > section:nth-child(3) > article > img {
+  padding: 2%;
+}
+main > section:nth-child(4) > h2 {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #ffffff;
+}
+main > section:nth-child(5) {
+  padding: 2%;
+  align-items: center;
+}
+main > section:nth-child(5) > article{
+  padding: 0px 35px 0px 35px;
+  align-items: center;
+}
+main > section:nth-child(5) > article > p {
+  padding: inherit;
+  font-size: 17px;
+  text-align: center;
+}
+main > section:nth-child(5) > article > h5{
+  text-align: center;
+  font-size: 20px;
+}
+main > section:nth-child(6) > h2 {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #ffffff;
+}
+main > section:nth-child(7) {
+  display: flex;
+  padding: 2%;
+  align-items: center;
+}
+main > section:nth-child(7) > article{
+  padding: 0px 35px 0px 35px;
+  align-items: center;
+  width: 550px;
+}
+main > section:nth-child(7) > article > p {
+  padding: inherit;
+  font-size: 15px;
+  text-align: center;
+}
+main > section:nth-child(7) > article > h5{
+  text-align: center;
+  font-size: 17px;
+}
+/** modifying footer elements**/
+footer{
+  display: flex;
+  min-height: 300px;
+}
+/** modifying footer text**/
+footer > article{
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  padding: 2% 30%;
+  background-color: rgba(0, 0, 0);
+  background-position: center;
+}
+footer > article{
+  color: #ffffff;
+}

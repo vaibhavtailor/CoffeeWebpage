@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final Project</title>
+    <meta name="description" content="Making Final Project.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- link up our JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/javascript.js"></script>
+
+  </head>
+  <body>
+  <!-- Our header is a 2 column container that will hold the navigation and the logo -->
+  <header>
+    <!-- logo -->
+    <article>
+      <a href="#"><img src="./img/name.jpg" alt="our logo"></a>
+    </article>
+    <!-- nav -->
+    <nav>
+      <!-- adding some useful links-->
+      <ul>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> About </a></li>
+        <li><a href="#"> Service </a></li>
+        <li><a href="#"> Contact </a></li>
+        <button id="mode" onclick="theme()">Dark Theme</button>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <article>
+        <h1> Nescafe Classic Coffee </h1>
+        <!-- adding some links-->
+        <ul>
+          <button id="button" class="dropbutton" onclick="show()"><a href="#"> Order Now </a></button>
+          <div id="dropdown" class="dropdown-content">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+          </div>
+          <button> View Specifications </button>
+        </ul>
+      </article>
+      <!-- adding image of new item-->
+      <article>
+        <img src="./img/image.jpg">
+      </article>
+    </section>
+    <section>
+      <article id="color">
+        <h2>Key Specifications</h2>
+        <p id="size">Nescafé Original Extra forte is the extra strong instant coffee, for those who enjoy starting the day with an extra dose of disposition. The product comes in a 100g jar with sealed packing.
+           It can be prepared with water or milk.</p>
+        <button onclick="change()">Change background color</button>
+        <button onclick="size()">Get Offer</button>
+        <p id="offer" style="display:none"> NOW GET FLAT 50% OFF</p>
+      </article>
+      <article>
+        <img src="./img/image-one.jpg" alt="image one" />
+      </article>
+    </section>
+    <section>
+      <article>
+        <h2>Photo Gallery</h2>
+        <!-- add our gallery section (this was added in week 9) -->
+        <img src="./img/image-two.jpg" alt="image two">
+        <img src="./img/image-three.jpg" alt="image three">
+        <img src="./img/image-four.jpg" alt="image four">
+        <img src="./img/image-five.jpg" alt="image five">
+        <img id="hidden" style="display:none" class="slides slide-hidden" src="./img/image-six.jpg" alt="image six">
+        <button id="images"class="btn" onclick="next()">Show Hidden Items</button>
+      </article>
+    </section>
+    <section>
+      <!-- hold the timings -->
+      <h2>Corporate Information</h2>
+    </section>
+    <section>
+      <article>
+        <h5>Corporate Information</h5>
+        <p>Nescafé is a soluble powdered coffee that became an American staple during World War II.In 1965, Nestlé introduced a freeze-dried coffee brand called "Nescafé Gold" in Europe.
+           In 1966, Nestlé developed a freeze-dried coffee brand under the name Taster's Choice.</p>
+      </article>
+    </section>
+    <section>
+      <h2>Contact Details</h2>
+    </section>
+    <section>
+      <article>
+        <h5>Opening Hours</h5>
+        <p>Everyday <br>
+        8am - 11pm <br>
+        </p>
+      </article>
+      <!-- hold address -->
+      <article>
+        <h5>Address / Contact Details</h5>
+        <p>1 Main Street, Ontario, Canada<br>
+           Phone: XXXXXXXXXX<br>
+           Email: mail@lusciouspizza.ie</p>
+      </article>
+    </section>
+  </main>
+  <!--Adding footer element-->
+  <footer>
+    <!-- hold text-->
+    <article>
+      <h4>Final Project submitted by [Vaibhav Tailor (200458209)]</h4>
+    </article>
+  </footer>
+</body>
+</html>
